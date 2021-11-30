@@ -8,7 +8,7 @@ class StatsServiceTest {
     void sumSalesAllSales() {
         StatsService statsService = new StatsService();
 
-        int [] monthlySales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] monthlySales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 180;
         int actual = statsService.findSum(monthlySales);
 
@@ -19,7 +19,7 @@ class StatsServiceTest {
     void averageAmountSalesPerMonth() {
         StatsService statsService = new StatsService();
 
-        int [] monthlySales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] monthlySales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 15;
         int actual = statsService.findAverage(monthlySales);
 
@@ -30,7 +30,7 @@ class StatsServiceTest {
     void maxSale() {
         StatsService statsService = new StatsService();
 
-        int [] monthlySales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] monthlySales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 8;
         int actual = statsService.findMaxSale(monthlySales);
 
@@ -41,7 +41,7 @@ class StatsServiceTest {
     void minSales() {
         StatsService statsService = new StatsService();
 
-        long [] monthlySales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] monthlySales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 9;
         int actual = statsService.findMinSales(monthlySales);
 
@@ -52,7 +52,7 @@ class StatsServiceTest {
     void salesBelowAverage() {
         StatsService statsService = new StatsService();
 
-        int [] monthlySales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] monthlySales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 5;
         int actual = statsService.findSalesBelowAverage(monthlySales);
 
@@ -64,7 +64,7 @@ class StatsServiceTest {
     void salesAboveAverage() {
         StatsService statsService = new StatsService();
 
-        int [] monthlySales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] monthlySales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 5;
         int actual = statsService.findSalesAboveAverage(monthlySales);
 
